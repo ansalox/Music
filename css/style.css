@@ -1,0 +1,318 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #4f98a2;
+  font-family: "Indie Flower", cursive;
+}
+
+/* Encabezado */
+.header {
+  background-color: #4f98a2;
+  height: 70px;
+}
+
+/* Logotipo */
+.logo {
+  float: left;
+  padding: 10px;
+}
+
+.logo img {
+  width: 80px;
+  height: 50px;
+}
+
+/* Menú */
+.menu {
+  float: right;
+  margin: 24px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu a {
+  color: #fcdd7c;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Banner */
+.banner {
+  background-image: url(../img/banner.png);
+  background-color: #ff7bac;
+  background-size: 50% 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner h1 {
+  text-align: right;
+  font-size: 150px;
+  padding: 150px 50px;
+  color: #fcdd7c;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+.spotify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ajusta la altura según tus necesidades */
+}
+
+.btn-spotify {
+  background-image: url('../img/spotify.png'); /* Reemplaza 'ruta/para/el/logo/spotify.png' con la ruta real de tu imagen del logo de Spotify */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+  height: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+
+
+
+
+/* Historia */
+.history {
+  background-color: #00a649;
+  color: #ffffff;
+  padding: 20px 100px 70px 100px;
+  text-align: justify;
+}
+
+.history h2 {
+  text-shadow: 2px 2px 3px #000000;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.history p {
+  font-size: 30px;
+}
+/* video */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video-container {
+  width: 50%;
+  height: 50%;
+  max-width: 800px;
+  border: 10px solid #fcdd7c; /* Agrega un borde grueso de 10px con color amarillo */
+  box-shadow: 0 0 200px #0011fc; /* Agrega una sombra negra F59DB2 */
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Géneros */
+
+.genders {
+  padding: 10px;
+  text-align: center;
+  background-color: #FF7BAC;
+}
+
+table {
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+  width: 100%; /* Ajusta el ancho de la tabla al 100% del contenedor */
+  max-width: 800px; /* Establece un ancho máximo para evitar que la tabla se extienda demasiado en pantallas grandes */
+}
+
+table td, table th {
+  padding: 10px; /* Agrega espaciado interno a las celdas de la tabla */
+  font-size: 25px;
+  color: #000000;
+}
+
+
+
+.genders h2 {
+  color: #fcdd7c;
+  font-size: 45px;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+
+.genders span {
+  background-color: #fffb00;
+  border: 2px solid #e7685d;
+  color: #000000;
+  padding: 2px 10px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #4f98a2;
+  color: #fcdd7c;
+  font-size: 25px;
+  padding: 20px 100px;
+  text-align: center;
+  text-shadow: 2px 2px 9px #000000;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+.rounded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Encabezado */
+  .header {
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Logotipo */
+  .logo {
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Menú */
+  .menu {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Banner */
+  .banner {
+    background-size: 100% 300px;
+  }
+
+  .banner h1 {
+    font-size: 80px;
+    padding: 50px;
+  }
+
+  /* Historia */
+  .history {
+    padding: 20px;
+  }
+
+  .history h2 {
+    font-size: 40px;
+  }
+
+  .history p {
+    font-size: 20px;
+  }
+
+  /* Estilos para dispositivos móviles y tabletas */
+  .video-container {
+    width: 90%; /* Tamaño mediano ajustado para dispositivos móviles */
+  }
+
+  .genders table {
+    padding: 30px 100px;
+    margin: auto; /* Agregado para centrar la tabla */
+  }
+
+  .genders h2 {
+    color: #fcdd7c;
+    font-size: 45px;
+    text-shadow: 2px 2px 3px #000000;
+  }
+
+  .genders td {
+    font-size: 25px;
+    padding: 0px 20px;
+    text-align: left;
+    color: #fcdd7c;
+    text-shadow: 2px 2px 3px #000000;
+  }
+
+  .genders span {
+    background-color: #fffb00;
+    border: 2px solid #e7685d;
+    color: #000000;
+    padding: 2px 10px;
+  }
+
+  /* Imagen redondeada */
+  .rounded-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Estilos para pantallas de celulares y tabletas */
+  table {
+    display: block; /* Convierte la tabla en un bloque para ajustarla verticalmente */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal en pantallas pequeñas */
+  }
+
+  table thead {
+    display: none; /* Oculta el encabezado de la tabla en pantallas pequeñas */
+  }
+
+  table tbody, table tr, table td {
+    display: block; /* Convierte las filas y celdas en bloques para ajustarlas verticalmente */
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+  }
+
+  table td {
+    border: none; /* Elimina los bordes de las celdas en pantallas pequeñas */
+    border-bottom: 1px solid #ddd; /* Agrega un borde inferior a las celdas para separarlas visualmente */
+    position: relative; /* Permite que el contenido de las celdas se desplace verticalmente */
+    padding-left: 50%; /* Agrega espacio a la izquierda para mostrar las etiquetas de las celdas */
+  }
+
+  table td:before {
+    position: absolute; /* Posiciona las etiquetas de las celdas */
+    top: 6px; /* Ajusta el espaciado superior de las etiquetas */
+    left: 6px; /* Ajusta el espaciado izquierdo de las etiquetas */
+    width: 45%; /* Establece el ancho de las etiquetas */
+    padding-right: 10px; /* Agrega espacio a la derecha de las etiquetas */
+    white-space: nowrap; /* Evita que las etiquetas se dividan en varias líneas */
+    content: attr(data-label); /* Obtiene el texto de la etiqueta a través del atributo 'data-label' */
+    font-weight: bold; /* Aplica negrita a las etiquetas de las celdas */
+  }
+}
