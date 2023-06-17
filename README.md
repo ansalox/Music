@@ -1,5 +1,6 @@
 # Music
-Proyecto para enseñar lo basico en HTML+CSS y responsive desin
+Proyecto creado para enseñar lo basico de HTML+CSS y Media queries
+
 
 
 #logo
